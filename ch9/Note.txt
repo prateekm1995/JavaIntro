@@ -1,0 +1,47 @@
+Abstract Class
+    -Abstact class is a class that cant be implemented, and may or maynot contain abstract methods.
+    - override and impelemtn are used interchangable, but but technically its overriding because al rules of overriding are applied
+    - initialisation is same as non abstract classes.
+    - an abstract class that extends another abstract class inherits all of its abstract methods
+    - the first concerete class that extends an abvstract class must provide implementation of all the inherited abstract methods
+Abstract methods
+    - cant be on nonabstract classes
+    - cant have a body
+    - amethod that has to be overridden is an abstract methods
+    - all rules and flow is same as overridden methods
+    - same declaration rules as normal methods, except cant have a body.
+    - abstract and final - contradiction
+    - abstract and private - contradiction
+    - abstract and static, - static cant be overriden, and abstract has to be overriden, so contradiction
+
+Interfaces
+    - Abstract data type that cant be instantiated, has to be implemented by a class.
+    - it contains abstract methods and constant variables. they are assumed to be public
+    - <public/default> < abstract(assumed by default)> interface <name> {
+        <public abstract>( assumed implicitly) <type> name();
+        <public static final>(assumed by default) type <name>
+    }
+    -interface can extend multiple interface
+    - class can extend multiple interfaces - because interface dont have instance initialisation
+    - abstract methods in an interface follow the same rule as abstract method in abstract classes  
+        - if an abstract type is implements/ extenda na interface it inhertis the abstract method, no need to define it.
+        - first concrete sublclass has to override all methods.
+    - inteface have implicit assumptions, abstrct classes dont.
+    - abstract class are part of instace initialisation , interfaces are not
+    - Duplicate intrface method declaration 
+        Two abstract methods, in two abstract types are consider compatible if :
+            - the signature is same
+            - return type is covariant
+        this is legal, and the conrete class only needs one method to implement both
+    - if 2 AM in 2 AT have differenct signature, then its overloading and concrete class requres 2 differnet method implementation
+    - if 2 AM in 2 AT have same signature but non covariant return types, -- compilation error
+
+    https://learning.oreilly.com/library/view/ocp-oracle-certified/9781119619130/c09.xhtml#:-:text=Reviewing%20Interface%20Rules,rules%20are%20similar.
+
+        
+
+
+
+
+
+

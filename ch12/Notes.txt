@@ -1,0 +1,76 @@
+Enums - behind hte scenes they are class with constant variables
+    - each constant is initalised once
+    - values() returns array of all constants, indexed in the order of declaration
+    - Enum.valueOf(String) returns enum constant whose name matches the string exactly. otherwise throws exception
+    - cant be extended
+    - can be swtiched in enum classes without Enum name
+    - fields - dont need to be final, but are made as good practice for immutability
+    - constructors are implicitly private
+    - support abstract method implementation and method overloading
+
+Inner classes
+    - they are like members of a class
+    - they can access even private variable of outer class
+    - they can only be accessed via instance, just like a normal nonstatic members
+    - other members of the class can use the inner class normally.
+    - can have any access modifier
+    - can extend any class interface
+    - can be abstract or final
+    - cannot declara stitc fields or methods, can have constants
+    - If you want to use an inner class outside of tha class : 
+        new Outer().new Inner();
+    - in case of variables with same name : use Outer.this.variable to access outer;
+
+Static nested classes
+    - Can be instantiated without instance of outer class
+    - nesting creates a namespace
+    - outer class can access members of inner static class
+
+Local class
+    - nested inside a method
+    - do not have a access modifier
+    - scope is contained within the method
+    - instances can be created only inside the methods
+    - local classes can be returned though
+    - cant be static or cant have static members
+    - have acces to all members of enclosing class
+    - can access local varialbes of method only if they are final or effectively final - dont be intrinsicly passing that varialbe as an argument to the constructor
+
+Anonymous class
+ -https://learning.oreilly.com/library/view/ocp-oracle-certified/9781119619130/c12.xhtml#R_c12-tbl-0001
+ - they are like local classes, used when you only need to use it once.
+ - they are required to extend 1 abstract class or implement 1 interface
+ - syntax :
+    <Interface/Abstract> var = new <Interface/Abstract>() {//implmentation}
+- can be used to pass an argument. example asynchronous callbacks. since java8 lambdas are better in case of functional interface.
+- can be defined outside an method as well
+
+Default methods 
+    - default keyword, need body
+    - implicitly assumed to be public- can be overriden
+    - can be ovverridden
+    - idea is to provide a default implementation, much like concrete mthods in abstract classes.
+    - cannot be abstract final static
+    - if a classes inherits 2 or more default methods with same signature, then the method should be overridden
+
+static interface methods
+    - decalred with static
+    - assumed to be public if specifer is missing( can be private as well)
+    - cant be abstract or final
+    - is not inherited, needs to be access using reference of original interface.
+    - since they are not complied, duplicates are allowed in implementing class
+
+private interface methods
+    - are used to reduce code duplication in interfaces
+    - can be used in default methods or other private , nothing else.
+    - private access modifer and a body
+    - cant be abstract, can be final(redundant)
+
+private static interface methods
+    - can be acces by default , private and static interface methods inside the interface only.
+    - reduce duplication
+
+
+
+
+
