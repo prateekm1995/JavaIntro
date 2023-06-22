@@ -3,7 +3,7 @@
     - No return type
     - same name as class 
 
-2. Instance initializer: paranthesis that occur outside method defitnition
+2. Instance initializer: braces that occur outside method defitnition
    first fields and instance initializer are executed in order of occurance 
    then the constructor is called     
  
@@ -12,7 +12,7 @@
     boolean(1), byte(8 singed), short(16 signed), int(32 signed), 
     long(64 signed), float(32 signed), double(64 signed), char(16, 16 bit unicode - unsigned)
     char and short are related 
-    short range [2^15, 2^15 - 1]
+    short range [-2^15, 2^15 - 1]
     char range [0, 2^16-1]
 
 4. literals
@@ -22,6 +22,7 @@
     0Xff - hexa
     0b - binary
     123345.5f  float
+    123345.5 double
 
     can add undersocre anywhere for readability except ends, and next to decimals
 

@@ -1,9 +1,9 @@
 package packagec;
 
-import packaged.StringProvider;
+import packagee.StringHelper;
 
 public class Driverc {
     public static void main (String[] args) {
-        System.out.println(StringProvider.getMessage());
+        System.out.println(StringHelper.help());
     }
 }
