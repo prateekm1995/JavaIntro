@@ -111,7 +111,7 @@ public class Driver {
         System.out.println(c);
         System.out.println(c);
         
-        char e ;
+        char e = 'a';
         System.out.println(e);
 
     }
