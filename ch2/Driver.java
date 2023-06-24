@@ -113,7 +113,8 @@ public class Driver {
         
         char e = 'a';
         System.out.println(e);
-
+        System.out.println(e);
+        
     }
 }
 
