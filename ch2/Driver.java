@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
 1. COnstructor : special method used to create a new object
     - No return type
@@ -70,14 +72,18 @@ public class Driver {
         System.out.println(a);
         a = 123;
         System.out.println(a);
+        a = 'A';
+        System.out.println(a);
+
+        
 
         System.out.println("\nLong");
-        long b = 123L;
-        System.out.println(b);
-        b = 123;
-        System.out.println(b);
-        b=010L;
-        System.out.println(b);
+        long b = 123L;      
+        System.out.println(b);      
+        b = 123;        
+        System.out.println(b);      
+        b=010L;     
+        System.out.println(b);      
         b = 0XFL;
         System.out.println(b);
         b = 0b111L;
@@ -88,6 +94,10 @@ public class Driver {
         System.out.println(b);
         b = 0b111;
         System.out.println(b);
+        b = 0b111;
+        System.out.println(b);
+        b = 'B';
+        System.out.println(b);
 
         System.out.println("\nFloat");
         Float c = 123f;
@@ -96,11 +106,14 @@ public class Driver {
         System.out.println(c);
         //c = 345L; error
         System.out.println(c);
-        c = 0b111f;
+         //c = 0b111;
         System.out.println(c);
         System.out.println(c);
         System.out.println(c);
-
+        
+        char e ;
+        System.out.println(e);
 
     }
 }
+
