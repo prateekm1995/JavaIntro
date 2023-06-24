@@ -84,7 +84,7 @@ public class Driver {
         System.out.println(b);      
         b=010L;     
         System.out.println(b);      
-        b = 0XFL;
+        b = 0XFFL;
         System.out.println(b);
         b = 0b111L;
         System.out.println(b);
