@@ -1,9 +1,11 @@
-package packagec;
 
-import packagee.StringHelper;
 
 public class Driverc {
     public static void main (String[] args) {
-        System.out.println(StringHelper.help());
+        int x=1;
+        for(int i=1; i<=128 ; i+=i) {
+        x += x ;
+        }
+        System.out.println(x);
     }
 }
